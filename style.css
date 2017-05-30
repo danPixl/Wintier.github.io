@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Roboto+Mono'); /* Import fonts from Google Fonts to ensure the site looks the same across systems */
 
+/*
+
+Hey Wintier, instead of copy/pasting the same style code for every paragraph, why not just put it all into one central place?
+
+The way this works is because only the h1 needs a specific style. We can let every other HTML element inherit from the body styling.
+
+*/
+
 body {
     text-align: center;
     background-color: rgb(239,239,239);
-    font-family: 'Roboto Mono', monospace; /* Roboto Mono instead of Courier because GF doesn't have Courier */
+    font-family: 'Roboto Mono', monospace; /* use Roboto Mono because Google doesn't have Courier, and leave monospace as a fallback in case the fonts don't load */
 }
 
 h1 {
     color: rgb(0,118,202); 
-    font-family: 'Dosis', sans-serif; /* add sans-serif incase the fonts didn't load */
+    font-family: 'Dosis', sans-serif; /* use the default sans-serif font as a fallback */
 }
